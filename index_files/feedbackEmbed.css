@@ -1,0 +1,136 @@
+.thisFileIsHereBecauseOfHackweekAndEasyAccess {
+  display: none;
+}
+
+/* stylelint-disable declaration-no-important */
+.jfFeedbackButton-icon {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  transition: all .25s ease !important;
+}
+
+.jfFeedbackButton-text {
+  font-size: 14px;
+  transition: padding .25s ease, color .15s ease .1s !important;
+  vertical-align: top;
+  padding: 0;
+  overflow: hidden;
+  color: transparent;
+  display: inline-block;
+}
+
+.jfFeedbackButton-modal {
+  position: fixed;
+  width: 380px;
+  height: 320px;
+  display: none;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2), 0 0 5px 0 rgba(0,0,0,.2);
+  transition: height .1s ease-in !important;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.jfFeedbackButton-modal.jFisMobile {
+  width: auto !important;
+  height: auto !important;
+  top: 84px !important;
+  bottom: 84px !important;
+  left: 12px !important;
+  right: 12px !important;
+}
+
+.jfFeedbackButton-modal.jFisMobile.jFisAndroid {
+  width: auto !important;
+  height: auto !important;
+  top: 1px !important;
+  bottom: 50px !important;
+  left: 12px !important;
+  right: 12px !important;
+}
+
+.jfFeedbackButton-modal.jFisOpen { display: block !important; }
+
+.jfFeedbackButton-modal iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 0;
+}
+
+
+.jfFeedbackButton {
+  position: fixed;
+  border: 0;
+  cursor: pointer;
+  transition: all .25s ease !important;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 999999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.jfFeedbackButton.u-topLeft { top: 24px; left: 24px; }
+.jfFeedbackButton.u-topRight { top: 24px; right: 24px; }
+.jfFeedbackButton.u-bottomLeft { bottom: 24px; left: 24px; }
+.jfFeedbackButton.u-bottomRight { bottom: 24px; right: 24px; }
+
+.jfFeedbackButton.u-topLeft + .jfFeedbackButton-modal { top: 84px; left: 24px; }
+.jfFeedbackButton.u-topRight + .jfFeedbackButton-modal { top: 84px; right: 24px; }
+.jfFeedbackButton.u-bottomLeft + .jfFeedbackButton-modal { bottom: 84px; left: 24px; }
+.jfFeedbackButton.u-bottomRight + .jfFeedbackButton-modal { bottom: 84px; right: 24px; }
+
+.jfFeedbackButton:active,
+.jfFeedbackButton:focus { outline: 0; }
+
+.jfFeedbackButton:hover,
+.jfFeedbackButton.u-textOnly,
+.jfFeedbackButton.jFisActive {
+  border-radius: 8px;
+}
+
+.jfFeedbackButton:hover .jfFeedbackButton-text,
+.jfFeedbackButton.u-textOnly .jfFeedbackButton-text,
+.jfFeedbackButton.jFisActive .jfFeedbackButton-text {
+  padding: 0 48px 0 0;
+}
+
+.jfFeedbackButton:hover .jfFeedbackButton-icon,
+.jfFeedbackButton.u-textOnly .jfFeedbackButton-icon,
+.jfFeedbackButton.jFisActive .jfFeedbackButton-icon {
+  opacity: 0;
+}
+
+.jfFeedbackButton.jFisActive.jFisAndroid {
+  bottom: 1px !important;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  background: #e8e8e8;
+  border-radius: 50%;
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  line-height: 100%;
+  cursor: pointer;
+  z-index: 999;
+  color: #4a4a4a;
+  font-size: 22px;
+  border: 1px solid #ccc;
+  transition: background .25s ease;
+  font-family: sans-serif;
+}
+
+.close-btn:hover {
+  background:#ccc;
+}
+
+
+/* stylelint-enable declaration-no-important */
